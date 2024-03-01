@@ -453,7 +453,7 @@
                   </h3>
                   <ul class="d-flex list-unstyled mt-auto">
                     <li class="me-auto">
-                      <a href="https://github.com/olof-e" target="_blank">
+                      <a href="https://github.com/olof-e/" target="_blank">
                         <img
                           src="github-mark-white.svg"
                           alt="Github-logo"
@@ -480,6 +480,105 @@
               </div>
             </div>
 
+            <div
+              class="modal fade"
+              id="n-body-modal"
+              tabindex="-1"
+              role="dialog"
+              aria-hidden="true"
+            >
+              <div
+                class="modal-dialog modal-dialog-centered modal-lg"
+                role="document"
+              >
+                <div class="modal-content p-2 px-3">
+                  <div class="modal-header row">
+                    <h2
+                      class="modal-title col-sm-10 col-md-11"
+                      id="n-body-modal-title"
+                    >
+                      Simulering av N-Body problemet
+                    </h2>
+                    <button
+                      type="button"
+                      class="btn btn-secondary col-sm-2 col-md-1"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row mb-5 border-bottom">
+                      <span class="col-1 lead mb-3">Tags</span>
+                      <h3 class="col-12 lead">
+                        Mjukvara &bull; Java &bull; Parallelisering &bull;
+                        Algoritmer
+                      </h3>
+                    </div>
+                    <div class="row">
+                      <p>
+                        Detta var ett projektarbete gjort i kursen programmering
+                        i parallella system ID1217. För detta projekt skulle man
+                        utveckla ett program som tog använding av processorns
+                        kapacitet att utföra flera arbeten samtidigt.
+                      </p>
+
+                      <p>
+                        Just denna simulering av N-kropps problemet använder sig
+                        av <b>Barnes-Hut</b> algoritmen för att öka prestandan
+                        av simulering. Kraftuträkningarna mellan kropparna är
+                        sedan utförda parallelt genom en
+                        <b>domain-decomposition</b> på datastrukturen som
+                        innehåller kropparna och sedan distrubera ut chunks av
+                        datan till olika arbetar processor som utför
+                        kalkylationerna.
+                      </p>
+                    </div>
+                    <div class="row mt-5 mb-5 border-bottom">
+                      <span class="col-1 lead mb-3">Bilder</span>
+                    </div>
+                    <div class="row justify-content-center">
+                      <video style="width: 70%" autoplay>
+                        <source
+                          src="Inspelning 2024-03-01 184109.mp4"
+                          type="video/mp4"
+                        />
+                        Your broswer does not support this video
+                      </video>
+                    </div>
+                  </div>
+
+                  <div
+                    class="modal-footer row p-0 m-0"
+                    style="justify-content: flex-start"
+                  >
+                    <div class="row" style="padding: 0">
+                      <span
+                        class="d-flex justify-content-center col-2 lead"
+                        style="font-size: 20px"
+                      >
+                        Github Repo
+                      </span>
+                    </div>
+                    <div class="d-flex justify-content-center col-2">
+                      <a
+                        href="https://github.com/Olof-E/N-Body-Simulation"
+                        target="_blank"
+                      >
+                        <img
+                          src="github-mark-white.svg"
+                          alt="Github-logo"
+                          width="40"
+                          height="40"
+                          class="rounded-circle"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div class="col">
               <div
                 class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
@@ -495,16 +594,27 @@
                     filter: blur(2px) contrast(0.8) brightness(0.85);
                   "
                 ></div>
-                <div
+                <button
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#n-body-modal"
                   class="d-flex flex-column h-100 p-3 pb-3 text-white text-shadow-1"
-                  style="z-index: 10"
+                  style="
+                    z-index: 10;
+                    background-color: transparent;
+                    border: none;
+                    text-align: left;
+                  "
                 >
                   <h3 class="pt-3 mt-5 mb-4 display-6 lh-1 fw-bold">
                     N-Body Simulation
                   </h3>
                   <ul class="d-flex list-unstyled mt-auto">
                     <li class="me-auto">
-                      <a href="https://github.com/olof-e" target="_blank">
+                      <a
+                        href="https://github.com/Olof-E/N-Body-Simulation"
+                        target="_blank"
+                      >
                         <img
                           src="github-mark-white.svg"
                           alt="Github-logo"
@@ -527,7 +637,7 @@
                       <small>3d</small>
                     </li>
                   </ul>
-                </div>
+                </button>
               </div>
             </div>
 
