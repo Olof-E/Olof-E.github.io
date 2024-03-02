@@ -79,7 +79,7 @@ main {
 }
 .nav-link:hover,
 .nav-link:focus {
-  background-color: var(--bs-tertiary-bg) !important;
+  background-color: var(--bs-gray-dark) !important;
 }
 
 .scrollarea {
